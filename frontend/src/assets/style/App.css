@@ -1,0 +1,985 @@
+/* Icons by ICONS8 https://icons8.com/icons */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Big Snow";
+  src: url(../fonts/BigSnow.ttf);
+}
+:root {
+  font: normal 16px "Poppins";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+* textarea {
+  overflow: hidden;
+  resize: none;
+  outline: none;
+}
+* a {
+  color: #000000;
+  text-decoration: none;
+}
+
+body {
+  border: none;
+  overflow: hidden;
+}
+body a {
+  text-decoration: none;
+}
+
+#body {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: none;
+}
+
+.AuthenticationPage {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.AuthLogo,
+.LogInForm {
+  width: 50%;
+}
+
+.AuthLogo {
+  padding-left: 13%;
+}
+.AuthLogo h1 {
+  display: block;
+  font: normal 2.5rem "Big Snow";
+  font-size: 5rem;
+  color: #ff003f;
+  text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.6);
+}
+.AuthLogo p {
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+.LogInForm,
+.SignUpForm {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0 5%;
+  padding: 10px 15px;
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 9px;
+  box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.4117647059);
+  cursor: default;
+}
+.LogInForm form,
+.SignUpForm form {
+  padding: 10px 15px;
+  border: 1px solid transparent;
+}
+.LogInForm div,
+.SignUpForm div {
+  margin: 10px 0;
+  width: 100%;
+}
+.LogInForm input,
+.SignUpForm input {
+  font: 500 0.9rem "Poppins";
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #e3e3e3;
+  outline: none;
+  border-radius: 9px;
+  color: #ff003f;
+  cursor: text;
+}
+.LogInForm ::-moz-placeholder,
+.SignUpForm ::-moz-placeholder {
+  opacity: 0.3;
+}
+.LogInForm :-ms-input-placeholder,
+.SignUpForm :-ms-input-placeholder {
+  opacity: 0.3;
+}
+.LogInForm ::placeholder,
+.SignUpForm ::placeholder {
+  opacity: 0.3;
+}
+.LogInForm .FormChangeBtn,
+.SignUpForm .FormChangeBtn {
+  box-sizing: border-box;
+  padding: 0 15px;
+  text-align: center;
+}
+.LogInForm .FormChangeBtn div,
+.SignUpForm .FormChangeBtn div {
+  margin: 0;
+  padding: 20px 0;
+  border-top: 1px solid #e3e3e3;
+}
+.LogInForm .FormChangeBtn input,
+.SignUpForm .FormChangeBtn input {
+  width: 100px;
+  background-color: #febe10;
+  border: 1px solid transparent;
+  box-shadow: 1px 3px 3px rgba(171, 171, 171, 0.4392156863);
+  color: #000000;
+}
+.LogInForm .FormChangeBtn input:hover,
+.SignUpForm .FormChangeBtn input:hover {
+  background-color: #e4ab0e;
+  cursor: pointer;
+}
+.LogInForm .SubmitBtn,
+.SignUpForm .SubmitBtn {
+  background-color: #ff003f;
+  border: 1px solid transparent;
+  color: #ffffff;
+}
+.LogInForm .SubmitBtn:hover,
+.SignUpForm .SubmitBtn:hover {
+  background-color: #d80036;
+  cursor: pointer;
+}
+.LogInForm .FormAlert,
+.SignUpForm .FormAlert {
+  border: 1px solid transparent;
+  height: 35px;
+}
+.LogInForm .Message,
+.SignUpForm .Message {
+  margin: 2px 0;
+  padding: 2px auto;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 9px;
+  background-color: #000000;
+  color: #febe10;
+}
+
+.SignUpForm {
+  margin: 100px auto;
+  width: 500px;
+}
+.SignUpForm .FormHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.SignUpForm .FormTitle {
+  width: 90%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: black;
+}
+.SignUpForm .FormClose {
+  width: 10%;
+}
+.SignUpForm .FormName {
+  display: flex;
+}
+.SignUpForm .SubmitBtn {
+  background-color: #febe10;
+  color: #000000;
+}
+.SignUpForm .SubmitBtn:hover {
+  background-color: #e4ab0e;
+}
+
+.LightMode {
+  background-color: #ffffff;
+}
+
+.DarkMode {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+.DarkMode .DarkBase {
+  background-color: rgba(255, 255, 255, 0.4666666667);
+}
+.DarkMode #Sidebar,
+.DarkMode footer {
+  background-color: #000000;
+}
+.DarkMode .Dropdown-Menu ul,
+.DarkMode .PinnedBoards,
+.DarkMode .PinnedBooks {
+  background-color: #3f3f3f;
+}
+.DarkMode .UserSettings fieldset input {
+  color: #ffffff;
+  font-size: 1rem;
+}
+.DarkMode .BoardInfo,
+.DarkMode .BookInfo {
+  background-color: #2c2c2c;
+}
+.DarkMode .BoardInfo a,
+.DarkMode .BookInfo a {
+  color: #ff003f;
+}
+.DarkMode .BoardInfo nav,
+.DarkMode .BookInfo nav {
+  border-color: #000000;
+}
+.DarkMode .PageInfo,
+.DarkMode .PageEditor textarea,
+.DarkMode .wmde-markdown-color {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+.DarkMode .Task {
+  border-color: #000000;
+}
+.DarkMode .TaskBody:hover {
+  background-color: #212121;
+  border-color: #212121;
+}
+.DarkMode .ConfirmDialog {
+  background-color: #2c2c2c;
+}
+
+.WorkspaceIcons {
+  width: 25px;
+  cursor: pointer;
+}
+
+.WindowOptions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CloseButton,
+.GoBackButton {
+  padding: 0 5px;
+  border: none;
+}
+.CloseButton img,
+.GoBackButton img {
+  cursor: pointer;
+}
+
+.CloseButton {
+  text-align: right;
+}
+
+/* Sidebar */
+#Sidebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  border: none;
+  background-color: #333333;
+  box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.4117647059);
+}
+#Sidebar section {
+  margin: 10px 20px;
+}
+
+.Dropdown-Menu img {
+  margin: 10px 0;
+}
+.Dropdown-Menu ul {
+  position: fixed;
+  left: 0;
+  display: none;
+  justify-content: center;
+  padding: 15px 0;
+  width: 100%;
+  border: none;
+  background-color: #636363;
+}
+.Dropdown-Menu ul li {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+}
+.Dropdown-Menu ul a {
+  color: #ffffff;
+}
+.Dropdown-Menu ul a:hover {
+  color: #ff003f;
+}
+
+.Dropdown-Menu:hover .Dropdown-Content {
+  display: flex;
+}
+
+.Logo {
+  text-align: center;
+  font: normal 2.5rem "Big Snow";
+  font-size: 2.3rem;
+  color: #ff003f;
+}
+
+.SidebarOptions span {
+  padding-left: 7px;
+}
+
+/* Center */
+.AppView {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  height: 80vh;
+  box-sizing: border-box;
+}
+
+/* Workspace */
+.UserIntro {
+  margin: 25px 0;
+}
+.UserIntro h1 {
+  font: normal 2.5rem "Big Snow";
+  font-size: 2.8rem;
+}
+
+.UserSettings {
+  display: block;
+  width: 100%;
+}
+.UserSettings form {
+  padding: 0 15px;
+}
+.UserSettings fieldset {
+  width: 100%;
+  padding: 0 7px;
+  margin: 10px 0;
+}
+.UserSettings fieldset input {
+  padding: 5px 0;
+  width: 100%;
+  font: 500 0.9rem "Poppins";
+  color: #000000;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.UserSettings .UserName {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.5rem;
+}
+.UserSettings .UserName fieldset {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.UserSettings .UserName fieldset input {
+  width: 250px;
+}
+.UserSettings .SaveProfileBtn {
+  margin: 50px;
+  padding: 15px 5px;
+  text-align: center;
+  border-top: 1px solid #dddddd;
+}
+.UserSettings .SaveProfileBtn input {
+  padding: 10px;
+  background-color: #50c878;
+  border: 1px solid #50c878;
+  outline: none;
+  box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.4117647059);
+  border-radius: 9px;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 600;
+}
+.UserSettings .SaveProfileBtn input:hover {
+  background-color: #10a37e;
+  color: #ffffff;
+}
+.UserSettings .UserPic {
+  display: flex;
+  justify-content: center;
+}
+.UserSettings .UserPic img {
+  margin: 20px 0;
+  padding: 5px;
+  width: 100%;
+  background-color: #ffe7aa;
+  border: 2px solid #ff003f;
+  border-radius: 100%;
+}
+.UserSettings .UserInfo {
+  display: flex;
+  justify-content: center;
+}
+
+.NewItem {
+  margin: 25px 0;
+  padding: 5px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 1px 3px 9px #c9c9c9;
+  cursor: pointer;
+}
+.NewItem i {
+  font-size: 30px;
+  color: #ff003f;
+}
+
+.NewItem:hover {
+  box-shadow: 1px 3px 9px #aaaaaa;
+}
+
+.GridView {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  justify-content: flex-start;
+  padding: 20px 7px;
+  overflow-y: auto;
+}
+.GridView a {
+  display: flex;
+}
+
+.PinnedItems {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  width: 100%;
+}
+
+.PinnedBoards,
+.PinnedBooks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 25px 15px;
+  background-color: #ececec;
+  border-radius: 9px;
+}
+.PinnedBoards h2,
+.PinnedBooks h2 {
+  color: #ff003f;
+}
+
+.BookView,
+.BoardView {
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+  box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.4117647059);
+}
+.BookView nav,
+.BoardView nav {
+  display: flex;
+  position: relative;
+  height: 20%;
+}
+.BookView a,
+.BoardView a {
+  height: 80%;
+}
+
+.BookView:hover,
+.BoardView:hover {
+  transform: scale(1.02);
+}
+
+.BookTags,
+.BoardTags {
+  margin-top: 2px;
+  padding: 2px 7px;
+  width: 50%;
+  height: 31px;
+  border: 1px solid transparent;
+}
+.BookTags span,
+.BoardTags span {
+  padding: 2px 7px;
+  font: italic 500 0.5rem "Lora";
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2549019608);
+}
+
+.BookTags {
+  margin-left: 9px;
+}
+
+.ViewOptionsMenu {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  margin: 5px;
+  padding: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 25px;
+  text-align: center;
+  border-radius: 9px;
+  transition: all 0.7s ease;
+  cursor: pointer;
+  color: #000000;
+  background-color: #febe10;
+}
+.ViewOptionsMenu span {
+  display: none;
+}
+.ViewOptionsMenu img {
+  width: 20px;
+}
+.ViewOptionsMenu ul {
+  opacity: 0;
+  width: 100%;
+  list-style-position: inside;
+  list-style-type: none;
+  transition: all 0 ease;
+}
+.ViewOptionsMenu ul li {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  border-radius: 9px;
+  text-align: center;
+  background-color: #e3e3e3;
+  color: #ff003f;
+  cursor: pointer;
+  transition: height 1s ease;
+}
+.ViewOptionsMenu ul li:hover {
+  color: #ffffff;
+  background-color: #ff003f;
+}
+
+.ViewOptionsMenu:hover {
+  width: 90%;
+  height: 95px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2745098039);
+  transition: all 0.5s ease;
+  background-color: #ffffff;
+}
+.ViewOptionsMenu:hover ul {
+  opacity: 1;
+  transition: all 1s ease;
+}
+.ViewOptionsMenu:hover ul li {
+  margin: 5px 2px;
+  height: 22px;
+  transition: height 1s ease;
+}
+
+.BookTitle,
+.BoardTitle {
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: center;
+  box-sizing: border-box;
+  margin: auto 0;
+  width: 100%;
+  font: normal 1.8rem "Big Snow";
+  font-size: 1.5rem;
+}
+
+.BookTitle {
+  padding: 0 5px 0 20px;
+}
+
+/* Notebooks */
+.BookView {
+  width: 150px;
+  height: 200px;
+  background: linear-gradient(to right, #febe10 10%, #ffe7aa 10%, #ffe7aa 80%);
+}
+.BookView a {
+  height: 85%;
+}
+
+.BookView:nth-child(even) {
+  background: linear-gradient(to right, #50c878 10%, #ccffcc 10%, #ccffcc 80%);
+}
+.BookView:nth-child(even) .ViewOptionsMenu {
+  background-color: #50c878;
+}
+
+.BookView:nth-child(3n) {
+  background: linear-gradient(to right, #6b6bff 10%, #d7d7ff 10%, #d7d7ff 80%);
+}
+.BookView:nth-child(3n) .ViewOptionsMenu {
+  background-color: #6b6bff;
+}
+
+.BookView:nth-child(4n) {
+  background: linear-gradient(to right, #ff003f 10%, #ffc7d5 10%, #ffc7d5 80%);
+}
+.BookView:nth-child(4n) .ViewOptionsMenu {
+  background-color: #ff003f;
+}
+
+/* Boards */
+.BoardView {
+  width: 150px;
+  height: 150px;
+  background-color: #ffe7aa;
+}
+
+.BoardView:nth-child(even) {
+  background-color: #ccffcc;
+}
+.BoardView:nth-child(even) .ViewOptionsMenu {
+  background-color: #50c878;
+}
+
+.BoardView:nth-child(3n) {
+  background-color: #d7d7ff;
+}
+.BoardView:nth-child(3n) .ViewOptionsMenu {
+  background-color: #6b6bff;
+}
+
+.BoardView:nth-child(4n) {
+  background-color: #ffc7d5;
+}
+.BoardView:nth-child(4n) .ViewOptionsMenu {
+  background-color: #ff003f;
+}
+
+.BookView:nth-child(even) .ViewOptionsMenu:hover,
+.BookView:nth-child(3n) .ViewOptionsMenu:hover,
+.BookView:nth-child(4n) .ViewOptionsMenu:hover,
+.BoardView:nth-child(even) .ViewOptionsMenu:hover,
+.BoardView:nth-child(3n) .ViewOptionsMenu:hover,
+.BoardView:nth-child(4n) .ViewOptionsMenu:hover {
+  background-color: #ffffff;
+}
+
+.DarkBase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5254901961);
+  overflow: hidden;
+}
+
+.ViewsBase {
+  overflow-y: auto;
+}
+
+.BookInfo,
+.BoardInfo,
+.PageInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 60%;
+  height: 90vh;
+  background-color: #ffffff;
+  border-radius: 9px;
+  box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.4117647059);
+}
+
+.Title input {
+  padding-top: 7px;
+  width: 100%;
+  outline: none;
+  text-align: center;
+  border: none;
+  font: normal 2.5rem "Big Snow";
+  color: #ff003f;
+  background-color: transparent;
+}
+
+.Menu {
+  margin-top: 2vh;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #ff003f;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.Menu:hover {
+  background-color: #d80036;
+}
+
+.Sections {
+  margin: 10px 0;
+  padding: 0 10px;
+  overflow-y: auto;
+}
+.Sections nav {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+}
+.Sections nav a,
+.Sections nav div {
+  padding: 4px;
+  width: 95%;
+  text-align: center;
+  border-radius: 9px;
+}
+.Sections nav div {
+  width: 5%;
+}
+.Sections nav a:hover {
+  border: 1px solid #ff003f;
+  background-color: #ff003f;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.Empty {
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  border: none;
+  background: url(../img/empty.png) no-repeat border-box center;
+}
+
+.PagePreview {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+.PagePreview .wmde-markdown {
+  font-family: "Poppins";
+}
+
+.PageEditor textarea {
+  box-sizing: border-box;
+  padding: 5px 3px 5px 7px;
+  width: 100%;
+  min-height: 540px;
+  resize: none;
+  outline: none;
+  border: none;
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.BoardInfo {
+  width: 40%;
+}
+
+.Task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 5px;
+  color: #ff003f;
+  border-bottom: 1px solid #dddddd;
+}
+
+.TaskBox,
+.TaskDelete {
+  width: 7%;
+}
+
+.TaskBox input {
+  width: 18px;
+  height: 18px;
+  accent-color: #ff003f;
+  cursor: pointer;
+}
+
+.TaskComplete textarea {
+  overflow: hidden;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.TaskBody {
+  width: 86%;
+  padding: 5px 0;
+  border: 1px solid transparent;
+  cursor: text;
+}
+.TaskBody textarea {
+  padding: 0 5px;
+  width: 100%;
+  font: 500 0.9rem "Poppins";
+  border: none;
+  background-color: transparent;
+  color: #ff003f;
+}
+
+.TaskBody:hover {
+  border: 1px solid #dddddd;
+  border-radius: 9px;
+  background-color: #dddddd;
+}
+
+.ConfirmDialog {
+  margin: 250px auto;
+  padding: 15px 5px 7px;
+  width: 400px;
+  text-align: center;
+  background-color: white;
+  border: none;
+  border-radius: 9px;
+  box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.4117647059);
+}
+
+.PromptAction,
+.PromptElement {
+  font-weight: bold;
+}
+
+.PromptAction {
+  color: #ff003f;
+}
+
+.ConfirmDialogBtns {
+  padding-top: 9px;
+}
+.ConfirmDialogBtns img {
+  margin: 0 5px;
+}
+
+.NewTask {
+  margin: 15px 0;
+  box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.4117647059);
+  border-radius: 9px;
+  cursor: text;
+  color: #ff003f;
+}
+.NewTask textarea {
+  padding: 15px 7px;
+  width: 100%;
+  resize: none;
+  outline: none;
+  border: none;
+  border-radius: 9px;
+  background-color: transparent;
+  color: #ff003f;
+  font: 500 0.9rem "Poppins";
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0 20px;
+  width: 100%;
+  height: 13vh;
+  border: 1px solid #333333;
+  background-color: #333333;
+}
+footer h2,
+footer p {
+  font-family: "Lora";
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+footer p {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 850px) {
+  .GridView {
+    gap: 2rem;
+  }
+  .BookInfo,
+  .BoardInfo,
+  .PageInfo {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .Sections nav a {
+    width: 90%;
+  }
+  .AuthenticationPage {
+    padding: 0;
+    background-color: #ffffff;
+  }
+  .AuthenticationPage section {
+    border: none;
+  }
+  .AuthLogo,
+  .LogInForm {
+    width: 100%;
+  }
+  .AuthLogo {
+    margin: 0;
+    margin-top: 15vh;
+    padding-left: 0;
+  }
+  .AuthLogo h1 {
+    text-align: center;
+  }
+  .AuthLogo p {
+    display: none;
+  }
+  .LogInForm,
+  .SignUpForm {
+    margin: 0;
+    height: 70%;
+    box-shadow: none;
+  }
+  .LogInForm form,
+  .SignUpForm form {
+    padding: 0;
+  }
+  .SignUpForm .FormHeader {
+    margin: 0;
+    margin-top: 10vh;
+  }
+  .UserSettings form {
+    padding: 15px;
+    width: 100%;
+  }
+  .UserSettings fieldset {
+    margin: 7px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .UserSettings fieldset input {
+    width: 100%;
+  }
+  .UserSettings input {
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  .UserSettings .SaveProfileBtn {
+    margin: 0;
+    border: none;
+  }
+  .UserSettings .UserName fieldset input {
+    width: 100%;
+  }
+  .UserInfo {
+    width: 100%;
+  }
+  .UserPic {
+    display: block;
+    width: 100%;
+  }
+} /*# sourceMappingURL=App.css.map */
