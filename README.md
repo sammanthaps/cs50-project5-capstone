@@ -50,4 +50,4 @@ You can find their official documentation here: <https://docs.docker.com/desktop
 - **Step 1**: Go to the project _main_ folder and in your bash terminal: `docker compose up`
 - **Step 2**: In your _browser_ go to: `http://127.0.0.1:8000`
 
-If you want to see a demonstration of this project functionality: <https://youtu.be/hz_p7JzQ_Rk>
+If you want to see a demonstration of this project functionality: **<https://youtu.be/hz_p7JzQ_Rk>**
